@@ -1,0 +1,216 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    /* background-color: #F8F8F8; */
+    position: relative;
+    padding-top: 1px; /*There is a bug of css that if you padding top to child then parent will slide to fix that we need to give a margin top to parrent*/
+}
+#nav{
+     height: 9vh;
+     width: 100%;
+     /* background-color: red; */
+     margin-top: 30px;
+     border-top: 2px solid black;
+     border-bottom: 2px solid black;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+}
+#nav h1{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: monument;
+    font-size: 40px;
+    letter-spacing: -1px;
+}
+#nav h2{
+    /* background-color: blue; */
+    height: 100%;
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-right: 2px solid black;
+    font-size: 18px;
+    font-weight: 600;
+}
+#nav h2:nth-last-child(1){
+    width: 10%;
+    /* background-color: red; */
+}
+#nav h2:nth-last-child(2){
+    width: 26%;
+    /* background-color: red; */
+}
+#center{
+    height: 90%;
+    width: 100%;
+    /* background-color: red; */
+    padding: 4vw;
+}
+#content{
+    height: 100%;
+    width: 100%;
+    /* background-color: blue; */
+    position: relative;
+}
+#content video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+#overlay{
+    height: 40%;
+    width: 100%;
+    position: absolute;
+    /* background-color: blue; */
+    bottom: 0%;
+    padding: 3vw;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.154);
+    backdrop-filter: blur(1px);
+}
+#over1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+#over1 h1{
+   font-family: monument;
+   font-size: 3vw;  
+}
+#over1 h2{
+   font-size: 1vw;
+   padding: 2vw 2.4vw;
+   /* background-color: gray; */
+   border-radius: 50%;
+   border: 2px solid #fff;
+}
+#over2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #fff;
+    padding: 0.5vw 0;
+}
+#over2 h4{
+    font-size: 0.9vw;
+    font-weight: 300;
+}
+#over2 .ri-arrow-right-line{
+    font-size: 0.9vw;
+}
+#scroll{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding: 2vw;
+
+
+ }
+.container{
+    height: 130%;
+    width: 300%;
+    /* background-color: blue; */
+    display: inline-block;
+    /* border-right: 2px solid black ; */
+    animation-name: anime;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    padding: 0%;
+}
+#scroll img{
+    height: 70%;
+    border-radius: 50%;
+    width:13%;
+    object-fit: cover;
+    object-position: 30% 30%;
+    margin: 26px;
+}
+@keyframes anime{
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-100%);
+    }
+}
+
+#alphabet{
+    height: 9vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.9vh;
+    font-style: italic;
+    font-family: monument;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+#alphabet h5{
+    font-size: 1.5vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    border-bottom: 2px solid black;
+}
+#alphabet h6{
+    font-size: 1vw;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 4px;
+    padding: 0.6vw;
+    /* background-color: yellow; */
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all ease 0.2s;
+}
+#alphabet h6:hover{
+    border: 2px solid black;
+}
+
+#page2{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3vw;
+}
+#page2-part1{
+    height: 100%; 
+    width: 50%;
+    background-image: url(https://i.pinimg.com/736x/93/34/6f/93346f6234f8fd242de8053c5c4d3abf.jpg);
+    background-size: cover;
+    background-position: center; 
+}
+#page2-part2{
+    height: 100%;
+    width: 48%;
+}
+#page2-part2 img{
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
